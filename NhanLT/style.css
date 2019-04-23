@@ -1,0 +1,157 @@
+body {
+	font-family: Tahoma;
+	font-size: 17px;
+
+}
+#main {
+	width: 1000px;
+	padding: 0;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 1350px;
+
+	px;
+}
+
+#head {
+	height: 40px;
+	background-color: #ffffff;
+	border: 1px solid #CDCDCD;
+}
+
+.header_logo {
+	color: #555555;
+	text-decoration: none;
+	font-size: 41px;
+	font-family: Arial;
+	font-weight: bold;
+}
+
+.dotcom {
+	color: #4CAF50;
+}
+
+.header_title {
+	font-size: 16px;
+	float: right;
+	display: flex;
+	align-items: flex-end;
+	padding-bottom: 16px;
+	letter-spacing: 5px;
+}
+
+#head-link {
+	height: 40px;
+	background: #4caf50;
+}
+
+#left {
+	width: 180px;
+	min-height: 600px;
+	border: 2px solid #CCC;
+	float: left;
+	background-color: #ffffff;
+	margin-bottom: 5px;
+}
+
+#content {
+	width: 600px;
+	min-height: 600px;
+	border: 0px solid #CDCDCD;
+	text-align: center;
+	float:left;
+	border-left: 0;
+}
+
+#right {
+	width: 419px;
+	min-height: 250px;
+	float: right;
+	padding: 10px;
+	background-color: #f1f1f1;
+	box-shadow:  2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-right: 40px;
+	
+}
+#right img {
+	width: 400px;
+	height: 300px;
+}
+
+#head-link ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+#head-link ul li {
+
+	list-style: none;
+	float: left;
+}
+
+#head-link ul li a {
+	text-decoration: none;
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	color: #FFF;
+	padding: 0px 20px 0px 20px;
+	border-right: 1px solid #f1f1f1;
+}
+#head-link ul li a.active {
+	background: #1949b5;
+}
+
+.icon-links  {
+	font-size: 20px;
+	position: relative;;
+	top: 7px;
+	right: 0;
+	left: 660px;
+	bottom: 0;
+}
+
+.icon-links i {
+	margin-right: 1.8rem;
+}
+
+#right button {
+	color: white;
+	background-color: #4caf50;
+}
+
+#right p {
+	font-family: normal;
+	font-size: 24px;
+}
+
+#left a {
+	text-decoration: none;
+	display: block;
+	color: black;
+	list-style: none;
+	padding-left: 10px;
+}
+
+#left h4 {
+	padding-left: 10px;
+}
+
+
+#content button {
+	background-color: #616161;
+	color: white;
+}
+
+#content h1 {
+	color: #797272;
+	font-size: 76px;
+	font-weight: normal;
+}
+
+#content p {
+	font-size: 24px;
+	color: red;
+}
