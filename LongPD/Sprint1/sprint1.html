@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 2px;
+}
+.text01{
+    margin-top:15px;
+    letter-spacing:3px;
+    color:black;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:15px;
+    float: right;
+}
+.topnav {
+  overflow: hidden;
+  background-color: mediumseagreen;
+}
+.topnav a1 {
+    display: block;
+    text-align: center;
+    color: white;
+    background-color: mediumseagreen;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right:10px;
+    letter-spacing:3px;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+}
+.topnav a1:hover {
+  background-color: white;
+  color:black;
+}
+.column01{
+    float:left;
+    width:20%;
+}
+.list{
+    border: 5px lightgray;
+    background-color: white;
+}
+li{
+    color:black;
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+}
+.column02{
+    float:left;
+    width: 40%;
+}
+.column03{
+    float:right;
+    width: 40%;
+}
+.box01{
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right:20px;
+    margin-bottom:20px;
+    height:450px;
+    background-color: lightgrey;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+.topnav02 a {
+	float:left;
+  	display: block;
+  	text-align: center;
+  	padding: 16px 16px;
+  	margin-left:50px;
+    margin-right:10px;
+    color:white;
+    background-color: gray;  
+}
+.topnav02 a:hover {
+  background-color: lightgrey;
+  color: black;
+}
+.topnav03 a {
+	float:left;
+  	display: block;
+  	text-align: center;
+  	padding: 16px 16px;
+  	margin-left:0px;
+    margin-right:10px;
+    color:white;
+    background-color: mediumseagreen;  
+}
+.topnav03 a:hover {
+  background-color: mediumseagreen;
+  color:white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+</style>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+            <b a style="font-size:40px;color:rgb(120,120,120)">w3school</a>
+            <b a style="font-size:40px;color:mediumseagreen">.com</a>
+            <p class ="text01">THE WORLD'S LARGEST WEB DEVELOP SITE</p>  
+    </div>
+
+    <div class="topnav">
+                    <a1 style="float: left;">TUTORIALS<i class="fas fa-caret-down"></i></a1>
+                    <a1 style="float: left;">REFERENCES<i class="fas fa-caret-down"></i></a1>
+                    <a1 style="float: left">EXAMPLES<i class="fas fa-caret-down"></i></a1>
+                    <a1 style="float: left">EXERCISES<i class="fas fa-caret-down"></i></a1>
+                    <a1 style="float: right;"><i class='fas fa-search' style='font-size:20px'></i></a1>
+                    <a1 style="float: right"><i class="fa fa-globe" style="font-size:20px"></i></a1>
+    </div>
+    <div class="row">
+        <div class="column01">
+            <div class="list">
+                <p style="font-family: Arial, Helvetica, sans-serif;color:black;font-size:25px">HTML and CSS</p>
+                <ul>
+                    <li>Learn HTML</li>
+                    <li>Learn CSS</li>
+                    <li>Learn W3.CSS</li>
+                    <li>Learn Colors</li>
+                    <li>Learn Bootstrap</li>
+                    <li>Learn Icons</li>
+                    <li>Learn Graphics</li>
+                    <li>Learn How To</li>
+                </ul>
+                <p style="font-family:Arial, Helvetica, sans-serif;color:black;font-size:25px">JavaScript</p>
+                <ul style="list-style-type:none;">
+                    <li>Learn JavaScript</li>
+                    <li>Learn jQuery</li>
+                    <li>Learn AngularJS</li>
+                    <li>Learn JSON</li>
+                    <li>Learn AJAX</li>
+                    <li>Learn W3.JS</li>
+                </ul>
+            </div>
+        </div>
+        <div class="column02">
+                <p style="text-align: center;font-family:Arial, Helvetica, sans-serif;font-size: 60px;color:gray">HTML</p>
+                <p style="font-family: Arial, Helvetica, sans-serif;font-size: 30px;color:gray">The language for building web pages</p>
+                <div class="topnav02">
+                    <a style="font-size: 20px">LEARN HTML</a>
+                    <a style="font-size: 20px">HTML REFERENCE</a>
+                </div>
+            </div>
+        <div class="column03">
+            <div class="box01">
+                <p style="font-size: 20px;font-family: Arial, Helvetica, sans-serif;color:black">HTML Examples:</p>
+                <img src="fcode.jpg" style="width:470px;height:300px;">
+                <div class="topnav03">
+                    <a style="font-family:Arial, Helvetica, sans-serif;font-size: 20px">Try it yourself<i class="fa fa-angle-double-right" style="font-size:20px"></i></a>
+                </div>
+            </div>   
+        </div>  
+    </div>
+</body>
+</html>
