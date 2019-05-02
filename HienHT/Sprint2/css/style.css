@@ -489,12 +489,12 @@ body{
     }
     .right-side-main-container .learning-examples{
         flex-direction: column;
-        
+        margin: 0 auto;
     }
     .right-side-main-container .learning-examples .col-title, .col-example{
         display: block;
         text-align: center;
-        width: 65vw;
+        width: 67vw;
     }
 
     #header_links .link ul .remove{
@@ -503,7 +503,7 @@ body{
     }
 
     .programming-language{
-        flex-direction: column;
+        display: block;
         
 
     }
@@ -511,7 +511,7 @@ body{
     .programming-language .language-item{
         display: block;
         text-align: center;
-        max-width: 90%;
+        
     }
     .programming-language .language-item .item-specific{
         width: 100%;
