@@ -1,0 +1,922 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+div{
+    display: block;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    padding-top: 20px;
+    letter-spacing: 2px;
+}
+
+.header a{
+    font-family: fantasy;
+    text-decoration: none;
+    line-height: 1;
+    font-size: 37px;
+    letter-spacing: 3px;
+    color: #555555;
+    cursor: pointer;
+}
+
+.header a span{
+    color: #4caf50;
+}
+
+.header p{
+    margin: 14px 0 -5px 0;
+    font-family: "Segoe UI",Arial,sans-serif;
+    letter-spacing: 4px;
+}
+
+.link{
+    display: flex;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    background-color: #4CAF50 !important;
+    align-items: center;
+    height: 500%;
+    margin-top: 8px;
+    justify-content: space-between;
+}
+
+.link-letter ul{
+    display: flex;
+}
+
+.link-letter ul li{
+    list-style-type: none;
+    color: white;
+    padding: 18px 18px;
+    font-size: 17px;
+    letter-spacing: 3.5px;
+    font-family: "Segoe UI",Arial,sans-serif;
+}
+
+.link-letter ul li:hover{
+    background-color:white;
+    color: black;
+    cursor: pointer;
+}
+
+.link-icon i{
+    color: white;
+    font-size: 18px;
+    padding: 21px 21px;
+}
+
+.link-icon i:hover{
+    background-color:white;
+    color: black;
+    cursor: pointer;
+}
+
+.main{
+    display: block;
+    align-content: center;
+    box-sizing: inherit;
+}
+
+.left1{
+    display: block !important;
+    float: left;
+    width: 17%;
+    height: 4946px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    margin-bottom: -155px;
+}
+
+.left1 a{
+    text-decoration: none;
+    display: block;
+    color: black;
+    padding-left: 16px;
+    font-family: Verdana, sans-serif;
+    font-size: 17px;
+}
+
+.left1 a:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.left1 p{
+    display: block;
+    margin: 16px 16px;
+    font-size: 20px;
+    font-family: "Segoe UI", arial, sans-serif;
+}
+
+.html-course{
+    margin-bottom: 16px!important;
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 83%;
+    display: flex;
+}
+
+.mid1{
+    text-align: center!important;
+    width: 50%;
+    padding: 3%;
+    float: left;
+}
+
+.mid1 h1{
+    color: #555555;
+    font-size: 76px;
+    font-weight: normal;
+}
+
+.mid1 p{
+    color: #3a3a3a!important;
+    font-size: 24px!important;
+    box-sizing: inherit;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: center!important;
+    font-family: Verdana,sans-serif;
+}
+
+.mid1 button{
+    background-color: #616161;
+    color: white;
+    text-decoration: none;
+    padding: 3%;
+    border: none;
+    font-size: 16px;
+    margin: 5px 5px 5px 0;
+}
+
+.mid1 button:hover{
+    color: black;
+    background-color:  #a9a9a9;
+    cursor: pointer;
+}
+
+.right1-col{
+    padding: 3%;
+    width: 50%;
+    float: left;
+}
+
+.right1{
+    padding: 16px;
+    color: #000!important;
+    background-color: #f1f1f1!important;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.html-code{
+    width: auto;
+    background-color: #fff;
+    padding: 8px 12px;
+    border-left: 4px solid #4CAF50;
+    word-wrap: break-word;
+    margin-top: 16px!important;
+    margin-bottom: 16px!important;
+    font-family: Consolas,"courier new";
+    font-size: 16px;
+}
+
+.right1 h3{
+    font-size: 24px;
+    font-weight: normal;
+    padding: 0 10px;
+}
+
+.right1 button{
+    background-color: #4caf50;
+    color:white;
+    font-size: 16px;
+    padding: 8px 16px;
+    margin: 5px 5px 5px 0;
+    border: none;
+}
+
+.right1 button:hover{
+    cursor: pointer;
+    border: 1 solid;
+    box-shadow: 1px 1px 4px 3px #888888;
+}
+
+.css-course{
+    color: #000!important;
+    background-color: #f1f1f1!important;
+    float: left;
+    width: 83%;
+    display: flex;
+}
+
+.left2{
+    padding-top: 40px;
+    padding: 3%;
+    width: 50%;
+}
+
+.left2 h3{
+    font-size: 24px;
+    font-weight: normal;
+    padding: 0 10px;
+}
+
+.css-code{
+    width: auto;
+    background-color: #fff;
+    padding: 8px 12px;
+    border-left: 4px solid #4CAF50;
+    word-wrap: break-word;
+    margin-top: 16px!important;
+    margin-bottom: 16px!important;
+    font-family: Consolas,"courier new";
+    font-size: 16px;
+}
+
+.left2 button{
+    background-color: #4caf50;
+    color:white;
+    font-size: 16px;
+    padding: 8px 16px;
+    margin: 5px 5px 5px 0;
+    border: none;
+}
+
+.left2 button:hover{
+    cursor: pointer;
+    border: 1 solid;
+    box-shadow: 1px 1px 4px 3px #888888;
+}
+
+.right2{
+    text-align: center!important;
+    width: 50%;
+    padding: 3%;
+    float: left;
+}
+
+.right2 h1{
+    color: #555555;
+    font-size: 76px;
+    font-weight: normal;
+}
+
+.right2 p{
+    color: #3a3a3a!important;
+    font-size: 24px!important;
+    box-sizing: inherit;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: center!important;
+    font-family: Verdana,sans-serif;
+}
+
+.right2 button{
+    background-color: #616161;
+    color: white;
+    text-decoration: none;
+    padding: 3%;
+    border: none;
+    font-size: 16px;
+    margin: 5px 5px 5px 0;
+}
+
+.right2 button:hover{
+    color: black;
+    background-color:  #a9a9a9;
+    cursor: pointer;
+}
+
+.SQL-course{
+    color: #000!important;
+    background-color: #f1f1f1!important;
+    float: right;
+    width: 82.8%;
+    display: flex;
+}
+
+.left3{
+    padding-top: 40px;
+    padding: 3%;
+    width: 50%;
+}
+
+.left3 h3{
+    font-size: 24px;
+    font-weight: normal;
+    padding: 0 10px;
+}
+
+.SQL-code{
+    width: auto;
+    background-color: #fff;
+    padding: 8px 12px;
+    border-left: 4px solid #4CAF50;
+    word-wrap: break-word;
+    margin-top: 16px!important;
+    margin-bottom: 16px!important;
+    font-family: Consolas,"courier new";
+    font-size: 16px;
+}
+
+.left3 button{
+    background-color: #4caf50;
+    color:white;
+    font-size: 16px;
+    padding: 8px 16px;
+    margin: 5px 5px 5px 0;
+    border: none;
+}
+
+.left3 button:hover{
+    cursor: pointer;
+    border: 1 solid;
+    box-shadow: 1px 1px 4px 3px #888888;
+}
+
+.right3{
+    text-align: center!important;
+    width: 50%;
+    padding: 3%;
+    float: left;
+}
+
+.right3 h1{
+    color: #555555;
+    font-size: 76px;
+    font-weight: normal;
+}
+
+.right3 p{
+    color: #3a3a3a!important;
+    font-size: 24px!important;
+    box-sizing: inherit;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: center!important;
+    font-family: Verdana,sans-serif;
+}
+
+.right3 button{
+    background-color: #616161;
+    color: white;
+    text-decoration: none;
+    padding: 3%;
+    border: none;
+    font-size: 16px;
+    margin: 5px 5px 5px 0;
+}
+
+.right3 button:hover{
+    color: black;
+    background-color:  #a9a9a9;
+    cursor: pointer;
+}
+
+.JavaScript-course{
+    margin-bottom: 16px!important;
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 83%;
+    display: flex;
+}
+
+.left4{
+    text-align: center!important;
+    width: 50%;
+    padding: 3%;
+    float: left;
+}
+
+.left4 h1{
+    color: #555555;
+    font-size: 76px;
+    font-weight: normal;
+}
+
+.left4 p{
+    color: #3a3a3a!important;
+    font-size: 24px!important;
+    box-sizing: inherit;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: center!important;
+    font-family: Verdana,sans-serif;
+}
+
+.left4 button{
+    background-color: #616161;
+    color: white;
+    text-decoration: none;
+    padding: 3%;
+    border: none;
+    font-size: 16px;
+    margin: 5px 5px 5px 0;
+}
+
+.left4 button:hover{
+    color: black;
+    background-color:  #a9a9a9;
+    cursor: pointer;
+}
+
+.right4-col{
+    padding: 3%;
+    width: 50%;
+    float: left;
+}
+
+.right4{
+    padding: 16px;
+    color: #000!important;
+    background-color: #f1f1f1!important;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.JavaScript-code{
+    width: auto;
+    background-color: #fff;
+    padding: 8px 12px;
+    border-left: 4px solid #4CAF50;
+    word-wrap: break-word;
+    margin-top: 16px!important;
+    margin-bottom: 16px!important;
+    font-family: Consolas,"courier new";
+    font-size: 16px;
+}
+
+.right4 h3{
+    font-size: 24px;
+    font-weight: normal;
+    padding: 0 10px;
+}
+
+.right4 button{
+    background-color: #4caf50;
+    color:white;
+    font-size: 16px;
+    padding: 8px 16px;
+    margin: 5px 5px 5px 0;
+    border: none;
+}
+
+.right4 button:hover{
+    cursor: pointer;
+    border: 1 solid;
+    box-shadow: 1px 1px 4px 3px #888888;
+}
+
+.dev-col{
+    color: #fff!important;
+    background-color: #616161!important;
+    padding-top: 32px!important;
+    padding-bottom: 32px!important;
+    float: left;
+    width: 83%;
+    box-sizing: inherit;
+}
+
+.Py{
+    padding: 8px 16px!important;
+    padding-bottom: 24px!important;
+    color: #000!important;
+    background-color: #fff!important;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.Py h2{
+    font-size: 36px!important;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    color: #000!important;
+    text-align: center!important;
+}
+
+.Py p{
+    color: #3a3a3a!important;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.Py button{
+    background-color: #616161;
+    color: white;
+    text-decoration: none;
+    padding: 3%;
+    border: none;
+    font-size: 16px;
+    margin: 5px 5px 5px 0;
+}
+
+.Py button:hover{
+    color: black;
+    background-color:  #a9a9a9;
+    cursor: pointer;
+}
+
+.col{
+    padding: 2% 3%;
+    width: 50%;
+    float: left;
+    text-align: center!important;
+}
+
+.WCB{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #000!important;
+    background-color: #fff!important;
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    float: right;
+    width: 82%;
+    display: flex;
+}
+
+.w3{
+    padding: 3%;
+    width: 33.33333%;
+    text-align: center!important;
+    float: left;
+}
+
+.w3 h2{
+    font-size: 36px!important;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    color: #000!important;
+    text-align: center!important;
+}
+
+.w3 p{
+    color: #3a3a3a!important;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.w3 button{
+    background-color: #616161;
+    color: white;
+    text-decoration: none;
+    padding: 3%;
+    border: none;
+    font-size: 16px;
+    margin: 5px 5px 5px 0;  
+}
+
+.w3 button:hover{
+    color: black;
+    background-color:  #a9a9a9;
+    cursor: pointer;
+}
+
+.w3 img:hover{
+    cursor: pointer;
+}
+
+.Exercises{
+    color: #fff!important;
+    background-color: #616161!important;
+    padding: 12px 24px!important;
+    text-align: center!important;
+    box-sizing: inherit;
+    float: right;
+    width: 83%;
+    display: block;
+    padding-top: 48px!important;
+    padding-bottom :68px!important;
+}
+
+.Exercises h2{
+    font-size: 36px!important;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    text-align: center!important;
+}
+
+.Exercises p{
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.row{
+    padding: 0 8px;
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: inherit;
+    display: flex;
+}
+
+.w3-t1{
+    padding: 0 8px;
+    width: 33.33333%;
+    float: left;
+}
+
+.w3-t3 p{
+    color: #fff!important;
+    background-color: #4CAF50!important;
+    padding-top: 16px!important;
+    padding-bottom: 16px!important;
+    width: 100%;
+}
+
+.w3-t2{
+    width: 20%;
+    padding: 0 8px;
+    float: left;
+}
+
+.w3-t3 p:hover{
+    cursor: pointer;
+    box-shadow: 0 8px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.Templates{
+    color: #000!important;
+    background-color: #f1f1f1!important;
+    padding-top: 32px!important;
+    padding-bottom: 32px!important;
+    padding: 12px 24px;
+    text-align: center!important;
+    box-sizing: inherit;
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 82.8%;
+    float: right;
+    display: block;
+}
+
+.Templates img{
+    width: 100%;
+    margin: 16px 0 20px 0;
+    vertical-align: middle;
+    border-style: none;
+    cursor: pointer;
+} 
+
+.Templates h2{
+    font-size: 36px!important;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.Templates p{
+    font-size: 20px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    color: #3a3a3a!important;
+}
+
+.Templates button{
+    background-color: #616161;
+    color: white;
+    text-decoration: none;
+    padding: 1%;
+    border: none;
+    font-size: 16px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px; 
+}
+
+.Templates button:hover{
+    color: black;
+    background-color:  #a9a9a9;
+    cursor: pointer;
+}
+
+.Section{
+    color: #000!important;
+    background-color: white!important;
+    padding-top: 32px!important;
+    padding-bottom: 32px!important;
+    padding: 12px 24px;
+    text-align: center!important;
+    box-sizing: inherit;
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 82.8%;
+    float: right;
+    display: block;
+}
+
+.Section h2{
+    font-size: 36px!important;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.Section p{
+    font-size: 20px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    color: #3a3a3a!important;
+}
+
+.Section button{
+    background-color: #616161;
+    color: white;
+    text-decoration: none;
+    padding: 1%;
+    border: none;
+    font-size: 16px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px; 
+}
+
+.Section button:hover{
+    color: black;
+    background-color:  #a9a9a9;
+    cursor: pointer;
+}
+
+.display{
+    width: 82.8%;
+    float: right;
+    display: block;
+    color: #fff!important;
+    background-color: #000!important;
+    position: relative;
+    box-sizing: inherit;
+}
+
+.display img{
+    max-width: 100%;
+    margin: auto;
+    display: block;
+    vertical-align: middle;
+}
+
+.cer{
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+}
+
+.cer h2{
+    margin: 10px 0 0 0;
+    font-size: 36px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+}
+
+.cer p{
+    margin: 10px 0 0 0;
+    font-size: 24px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+}
+
+.mid2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.mid2 button{
+    background-color: #4caf50;
+    color:white;
+    font-size: 17px;
+    padding: 12px 24px!important;
+    border: none;
+}
+
+.mid2 button:hover{
+    cursor: pointer;
+    color: #000;
+    background-color: white;
+}
+
+.end{
+    text-align: center!important;
+    padding: 0.01em 16px;
+    box-sizing: inherit;
+    color: #fff!important;
+    background-color: #616161!important;
+    padding-top: 32px!important;
+    padding-bottom: 32px!important;
+    width: 82.8%;
+    float: right;
+}
+
+.top-e{
+    padding-top: 32px!important;
+    padding-bottom: 32px!important;
+    padding: 0.01em 16px;
+    box-sizing: inherit;
+    color: #fff!important;
+    background-color: #616161!important;
+}
+
+.WEB-CERTIFICATES{
+    font-size:16px;
+    margin-top:-9px;
+}
+
+.QUIZZES{
+    font-size:16px;margin-top:-9px;margin-left:12px;
+}
+
+.EXERCISES{
+    font-size:16px;margin-top:-9px;margin-left:12px
+}
+
+.cs{
+    text-decoration:none;
+    color: inherit;
+    background-color: transparent;
+    text-align: center!important;
+}
+
+.cl{
+    text-decoration:none;
+    color: #000!important;
+    background-color: #f1f1f1!important;
+    float: left!important;
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.right-e{
+    font-family: "Segoe UI",Arial,sans-serif;
+    float: right!important;
+    letter-spacing: 4px;
+    box-sizing: inherit;
+}
+
+.mid-e{
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    box-sizing: inherit;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.mid-e a{
+    background-color: transparent;
+    color: inherit;
+    cursor: pointer;
+    text-decoration: underline;
+
+
+}
