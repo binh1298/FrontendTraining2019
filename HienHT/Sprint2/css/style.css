@@ -134,7 +134,7 @@ body{
 }
 
 .w3-contents a:hover{
-    background-color: #A9A9A9
+    background-color: #A9A9A9;
 }
 
 
@@ -196,7 +196,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 3%;
+    padding: 3vw;
 }
 .col-example .example_contents{
    
@@ -382,13 +382,19 @@ body{
     width: 100%;
 }
 
+
 .certificates .container .text{
     
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(0,0,0,0.6)
-    
+    background: rgba(0,0,0,0.6);
+    color: white;
+
+    letter-spacing: 2px;
+}
+.certificates .container .text .content p{
+    font-size: 1.3em;
 }
 
 .certificates .container .text{
@@ -407,13 +413,26 @@ body{
     padding: 0.8em 1.3em;
 }
 
+.ending{
+    padding: 2%;
+    background: #616161;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 4em;
+}
 .ending .end-nav{
     display: flex;
-    justify-content: space-between;
-}
-
-.ending .end-nav ul{
     
+}
+.ending .end-nav .btn-black{
+    margin: 0 0.5em;
+    background: white;
+    color: black;
+}
+.ending .end-nav ul{
+    display: block;
+    margin-left: auto;
+    color: white;
 }
 
 .ending .end-nav ul li{
@@ -423,4 +442,66 @@ body{
 .ending .end-nav ul li a{
     
     text-decoration: none;
+    color: white;
+    margin: 0 1em;
+}
+.ending .end-nav ul li a:hover{
+    color: #4CAF50;
+}
+
+.ending .end-nav .btn-black:hover{
+    background: #A9A9A9;
+}
+
+.ending p{
+    font-size: 0.9em;
+    margin-top: 2em;
+    color: white;
+    text-align: center;
+    letter-spacing: 0;
+    font-weight: 400;
+    padding: 0 1em;
+}
+
+.ending p span{
+    text-decoration: underline;
+}
+.ending p span:hover{
+    color: #4CAF50;
+    cursor: pointer;
+}
+
+.ending i{
+    margin-top: 1em;
+    color: white;
+    font-size: 2em;
+}
+
+.ending i:hover{
+    cursor: pointer;
+    color: #a9a9a9;
+}
+
+@media screen and (max-width: 984px){
+    .learning-examples{
+        flex-direction: column;
+        
+        align-items: center;
+        padding: 0;
+        width: 100%;
+    }
+    .learning-examples .col-title{
+        width: 100%;
+        padding: 0
+    }
+    .learning-examples .col-example{
+        width: 100%;
+        padding: 0;
+    }
+    .learning-examples .col-example .example_contents{
+        margin: 5em;
+    }
+
+    
+
 }
