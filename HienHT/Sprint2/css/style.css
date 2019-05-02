@@ -483,25 +483,39 @@ body{
 }
 
 @media screen and (max-width: 984px){
-    .learning-examples{
+    #header_contents{
+        flex-direction: column;
+        align-items: center;
+    }
+    .right-side-main-container .learning-examples{
         flex-direction: column;
         
-        align-items: center;
-        padding: 0;
-        width: 100%;
     }
-    .learning-examples .col-title{
-        width: 100%;
-        padding: 0
-    }
-    .learning-examples .col-example{
-        width: 100%;
-        padding: 0;
-    }
-    .learning-examples .col-example .example_contents{
-        margin: 5em;
+    .right-side-main-container .learning-examples .col-title, .col-example{
+        display: block;
+        text-align: center;
+        width: 65vw;
     }
 
+    #header_links .link ul .remove{
+        
+        display: none;
+    }
+
+    .programming-language{
+        flex-direction: column;
+        
+
+    }
+
+    .programming-language .language-item{
+        display: block;
+        text-align: center;
+        max-width: 90%;
+    }
+    .programming-language .language-item .item-specific{
+        width: 100%;
+    }
     
 
 }
