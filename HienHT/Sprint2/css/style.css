@@ -503,19 +503,16 @@ body{
     }
 
     .programming-language{
-        display: block;
         
-
+        flex-direction: column;
+        
     }
 
     .programming-language .language-item{
-        display: block;
-        text-align: center;
-        
+        margin-left: 5vw;
+        width: 60%;
     }
-    .programming-language .language-item .item-specific{
-        width: 100%;
-    }
+   
     
 
 }
