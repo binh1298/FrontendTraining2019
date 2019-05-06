@@ -313,15 +313,13 @@ section{
 }
 
 .programming-language .language-item{
-    flex: 1 1 50%;
-    min-width: 390px;
+    flex: 1 1 40%;
     background: white;
     padding: 0.5em 1em 1.5em 1em;
-    margin-bottom: 1em;
+    margin: 1em 1em;
+    min-width: 320px;
 }
-.programming-language .language-item:nth-child(1){
-    margin-top: 1em;
-}
+
 .programming-language .language-item .item-specific p{
     margin-bottom: 1.5em;
     font-size: 1.25em;
