@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>
@@ -18,7 +18,7 @@
         <div class="header-rightside">THE WORLD'S LARGEST WEB DEVELOPER SITE</div>
     </div>
     <div class="topnav" id="myTopnav">
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <div href="javascript:void(0);" onclick="myFunction()" class="icon"><i class="fa fa-bars"></i></div>
         <div class="topnav-button">TUTORIALS&MediumSpace;<i class="fas fa-caret-down"></i></div>
         <div class="topnav-button">REFERENCES&MediumSpace;<i class="fas fa-caret-down"></i></div>
         <div class="topnav-button">EXAMPLES&MediumSpace;<i class="fas fa-caret-down"></i></div>
@@ -134,7 +134,7 @@
                 </div>
             </div>
         </div>
-        <div class="page-rightside" style="background-color: lightgrey ">
+        <div class="page-rightside" style="background-color: #f1f1f1 ">
             <div class="example">
                 <div class="examplebox">
                     <div class="exampletitle">CSS Example:</div>
@@ -191,7 +191,7 @@
                 </div>
             </div>
         </div>
-        <div class="page-rightside" style="background-color: lightgrey">
+        <div class="page-rightside" style="background-color: #f1f1f1">
             <div class="example">
                 <div class="examplebox">
                     <div class="exampletitle">SOJ Example:</div>
@@ -240,12 +240,12 @@
             </div>
             <div class="colorpickermiddle">
                 <div class="boxtitle">Color Picker</div>
-                <div><img src="/colorpicker.png" style="width:140px;height:128px;"></div>
+                <div><img src="../img/colorpicker.png" class="picturecolor"></div>
             </div>
             <div class="colorpickerright">
                 <div class="boxtitle">Bootstrap</div>
                 <div class="boxtext">A CSS framework for designing better web pages</div>
-                <div>
+                <div class="colorpicker-twobuttons">
                     <div class="maincontent-button">LEARN BOOTSTRAP 3</div>
                     <div class="maincontent-button">LEARN BOOTSTRAP 4</div>
                 </div>           
@@ -255,20 +255,20 @@
             <div class="boxtitle">Exercises</div>
             <div class="boxtext">Test yourself with exercises</div>
             <div class="exercisesboxes">
-                <div class="exbox">HTML Exercises</div>
-                <div class="exbox">CSS Exercises</div>
-                <div class="exbox">JavaScript Exercises</div>
-                <div class="exbox">SQJ</div>
-                <div class="exbox">PHP</div>
-                <div class="exbox">Python</div>
-                <div class="exbox">jQuery</div>
-                <div class="exbox">Java</div>
+                <div class="exbox1">HTML Exercises</div>
+                <div class="exbox1">CSS Exercises</div>
+                <div class="exbox1">JavaScript Exercises</div>
+                <div class="exbox2">SQJ</div>
+                <div class="exbox2">PHP</div>
+                <div class="exbox2">Python</div>
+                <div class="exbox2">jQuery</div>
+                <div class="exbox2">Java</div>
             </div>
         </div>
-        <div class="webtemplates" style="background-color: lightgrey">
+        <div class="webtemplates">  
             <div class="boxtitle">Web Templates</div>
             <div class="boxtext">Browse our selection of <b>free</b> responsive HTML Templates</div>
-            <div><img src="/w3css_templates.jpg" style="width: 90%;height: 80%;margin-top: 20px;"></div>
+            <div><img src="../img/w3css_templates.jpg" class="picturetemp"></div>
             <div class="webtemplatesbutton">BROWSE TEMPLATES</div>
         </div>
         <div class="webtemplates">
@@ -277,10 +277,12 @@
             <div class="webtemplatesbutton">LEARN HOW TO</div>
         </div>
         <div class="webcertificates">
-            <div><img src="/getcertified.jpg" style="width: 70%;height: 100%;margin-top: 20px;"></div>
+            <div><img src="../img/getcertified.jpg" class="picture"></div>
             <div class="picturetexttop">Web Certificates</div>
             <div class="picturetextmiddle">Get certified in HTML, CSS and JavaScript</div>
-            <div class="getcertifiedbutton">Get certified <i class="fa fa-angle-double-right" style="font-size:16px"></i></div>
+            <div class="buttonbox">
+                <div class="getcertifiedbutton">Get certified <i class="fa fa-angle-double-right"></i></div>
+            </div>
         </div>
         <div class="footer">
             <div class="button">
@@ -298,7 +300,7 @@
                 <div>W3Schools is optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using this site, you agree to have read and accepted our <span style="text-decoration: underline">terms of use</span>, <span style="text-decoration: underline">cookie and privacy policy.</span></div>
                 <div><span style="text-decoration: underline">Copyright 1999-2019</span> by Refsnes Data. All Rights Reserved.</div>
             </div>
-            <div class="like"><i class='far fa-thumbs-up' style='font-size: 30px'></i></div>
+            <div class="like"><i class='far fa-thumbs-up'></i></div>
         </div>
     </div>
 <script>
