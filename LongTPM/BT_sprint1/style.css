@@ -1,0 +1,35 @@
+
+.container{
+    background-color:aqua;
+    /* padding: 10px; */
+    display: flex;
+    /* flex-direction: row; */
+    height: 400px;
+    width: 100PX;
+    /* align-items: flex-end; */
+    /* sang ngang */
+    /* justify-content: flex-start; */
+    /* giup minh keo dan tuy thich ma ko mat noi dung */
+    /* flex-wrap: wrap; */
+    /* tuy chinh vi tri noi dung */
+    /* align-content: center; */
+}
+
+.container div{
+    background-color: lemonchiffon;
+    margin: 10px;
+    text-align: center;
+    color: blueviolet;
+    width: 100px;
+    height: 50px
+}
+
+/* .item6{
+    /* align-self: flex-start; */
+/* /} */
+
+/* .item8{ */
+    /* margin-left: auto; */
+/* }  */
+
+
