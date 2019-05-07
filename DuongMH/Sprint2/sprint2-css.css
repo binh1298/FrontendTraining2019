@@ -1,0 +1,256 @@
+.container {
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    grid-template-rows: 60px 70px 475px 475px 475px 400px 600px 300px 300px 500px 200px 500px 350px;
+}
+                     /* ITEM 1 */
+.item1 {
+    grid-column: span 3;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-bottom: 1px solid lightgray;
+}
+.item1 div{
+    
+    font-size: 37px;
+    text-align: left;
+    font-weight: bold;
+}
+.world1 {
+    font-family: fontawesome;
+    font-weight: 100;
+    width: 40%;
+    text-align: left;
+    margin-top: 17px;
+}
+.com {
+    color: green;
+}
+.item1 .world2 {
+    width: 60%;
+    text-align: right;
+    font-size: 20px;
+    margin-top: 23px;
+    font-weight: 50;
+}
+
+
+                    /* ITEM 2 */
+.item2 {
+    background-color:#4CAF50;
+    grid-column: span 3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    border-left: none;
+    border: 1px solid rgba(211, 211, 211, 0.568);
+}
+.item2 > div {
+    color: white;
+    font-size: 25px;
+    line-height: 70px;
+    text-align: center;
+    padding: 0px 15px; 
+    border-bottom: 1px solid lightgray;
+    box-sizing: border-box;
+}
+.item2 .search {
+    margin-left: auto;
+    padding-right: 20px;
+}
+.item2 .globe {
+    padding-right: 20px;
+}
+.item2 > div:hover {
+    color: black;
+    background-color: white;
+    transition: 0.5s;
+}
+
+                    /* ITEM 3 */
+
+.item3 {
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid darkgray;
+    border-top: 1px solid darkgray;
+    grid-row : span 11;
+}
+.item3 > div {
+    font-size: 20px;
+    padding: 3px 3px 3px 15px;
+}
+.item3 > div:hover {
+    background-color: darkgray;
+}
+.item3 > h2 {
+    padding-left: 15px;
+    font-family: Segoe UI;
+    margin: 15px 0px 15px 0px;
+}
+
+                    /* ITEM 4 */
+.item4 {
+    background-color:rgb(255, 255, 255);
+    padding: 10%;
+    border-top: 1px solid darkgray;
+}
+.item4 > h1, p, button {
+    text-align: center;
+}
+.item4 > h1 {
+    font-size: 80px;
+    font-family: Segoe UI;
+    color: #555555;
+    font-weight: 400;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.item4 > p {
+    color: #3a3a3a;
+    font-family: Verdana;
+    font-size: 24px;
+}
+.item4 > div {
+    text-align: center;
+}
+.item4 > div > button {
+    font-size: 16px;
+    background-color: #616161;
+    font-family: Verdana;
+    padding: 8px 16px;
+    color: #fff;
+    border: none;
+    margin: 5px;
+}
+.item4 > div > button:hover {
+    background-color: lightgray;
+    color: #616161;
+    transition: 0.5s;
+}
+
+                    /* ITEM 5 */
+.item5 {
+    background-color:white;
+    border-top: 1px solid darkgray;
+    border-right: 1px solid darkgray;
+}
+.item5 > div {
+    margin: 5%;
+    background-color: rgb(236, 235, 235);
+    height: 90%;
+    box-sizing: border-box;
+}
+.item5 > div > div {
+    padding: 16px;
+}
+.item5 > div > div >h2 {
+    font-size: 24px;
+    color: black;
+    font-family: Segoe UI;
+}
+.item5 > div > div > div{
+    background-color: white;
+    border-left: 4px solid rgb(76, 175, 80);
+    font-size: 16px;
+    padding: 8px 16px;
+    font-family: Consolas;
+    line-height: 24px;
+}
+.item5 > div > div > button {
+    font-size: 16px;
+    background-color: #4CAF50;
+    padding: 10px 18px;
+    color: white;
+    border: none;
+    margin-top: 5%;
+}
+.item5 > div > div > button:hover {
+    color: black;
+    transition: 0.5s;
+}
+
+                    /* ITEM 6 */
+.item6 {
+    background-color: rgb(231, 228, 228);
+    padding: 3%;
+    width: 100%;
+}
+.item6 > div {
+    width: 90%;
+}
+.item6 > div > h2 {
+    font-family: Segoe UI;
+    font-size: 24px;
+    margin: 5px 0px 15px 0px;
+}
+.item6 > div > div {
+    background-color: white;
+    border-left: 4px solid rgb(76, 175, 80);
+    padding: 8px 16px;
+    font-family: Consolas;
+    font-size: 16px;
+    line-height: 24px;
+}
+.item6 > div > button {
+    font-size: 16px;
+    background-color: #4CAF50;
+    padding: 10px 18px;
+    color: white;
+    border: none;
+    margin-top: 5%;
+}
+.item6 > div > button:hover {
+    color: black;
+    transition: 0.5s;
+}
+
+
+
+.item7 {
+    background-color: rgb(231, 228, 228);
+}
+.item8 {
+    background-color: white;
+}
+.item9 {
+    background-color: white;
+}
+.item10 {
+    background-color: darkgray;
+}
+.item11 {
+    background-color: darkgray;
+}
+.item12 {
+    background-color: #616161;
+    grid-column: span 2;
+}
+.item13 {
+    background-color: white;
+    grid-column: span 2;
+}
+.item14 {
+    background-color: #616161;
+    grid-column: span 2;
+}
+.item15 {
+    background-color: lightgray;
+    grid-column: span 2;
+}
+.item16 {
+    background-color: white;
+    grid-column: span 2;
+}
+.item17 {
+    background-color: black;
+    grid-column: span 2;
+}
+.item18 {
+    background-color: #616161;
+    grid-column: span 2;
+}
