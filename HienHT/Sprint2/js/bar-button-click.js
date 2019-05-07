@@ -14,6 +14,8 @@ function clickClose(){
   x.style.display = "none";
 }
 
+
+
 // window.onload = function(){
 //   var x = document.getElementById('drop-down-container');
 //   document.onclick = function(e){
