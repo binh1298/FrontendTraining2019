@@ -507,7 +507,7 @@ input[type=checkbox]:checked~#menu {
 
 .br9s1 {
     display: grid;
-    grid-template-columns: 40% auto;
+    grid-template-columns: 60% auto;
 }
 
 @media screen and (max-width:995px) {
