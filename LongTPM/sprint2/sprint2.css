@@ -26,6 +26,58 @@
     padding: 15px 5px; 
 }
 
+.w3-contents{
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.w3-contents h4{
+    font-weight: normal;
+    font-size: 1.25em;
+    
+    margin: 1em 1em;
+}
+.w3-contents a{
+    color: black;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 0 1em;
+}
+
+.left-nav{
+    z-index: 3;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.w3-contents a:hover{
+    background-color: #A9A9A9;
+}
+
+
+
+
+.btn-black{
+    cursor: pointer;
+    background-color: #616161;
+    color: white;
+    text-decoration: none;
+    border: none;
+    font-size: 1.1em;
+    margin: 0.3em 0;
+    padding: 0.5em 1.25em;
+}
+
+.btn-black:hover{
+    color: black;
+    background-color:  #a9a9a9;
+}
+
+#main-contents-container{
+    display: grid;
+    grid-template-columns: 230px 1fr;
+}
 .up{
     text-transform:uppercase;
     padding: 16px 16px 16px;
@@ -40,14 +92,28 @@
 .up2{
     text-transform:uppercase;
     padding: 16px 16px 16px;
-    float: left;
+    
     color:honeydew;
     letter-spacing:3px;
     font-size: 20px;
     box-sizing: inherit;
+    
 }
 
+.to-left{
+    margin-left: auto;
+}
 
+.item3{
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    
+    z-index: 3;
+}
+
+.item4{
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
 
 
 .Bigtest{
@@ -183,13 +249,13 @@ h2 {
     color: #f1f1f1;
     background-color: #616161;
     margin-top: 15px;
-    padding-left: 150px;
+    padding-left: auto;
     margin: 5px 5px 5px 0;
     font-size: 16px;
     padding: 8px 16px;
     text-align: center;
     vertical-align: middle;
-    margin-left: 150px;
+    margin-left: auto;
 }
 
 .item9{
@@ -405,14 +471,11 @@ text-align: center;
 .a9{
     color:black;
     background-color: white;
-    margin-top: 15px;
-    padding-left: 150px;
     margin: 100px 5px 5px 50px;
     font-size: 16px;
     padding: 8px 16px;
     text-align: left;
     vertical-align: middle;
-    margin-left: 0 px;
 }
 
 .a10{
