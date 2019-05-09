@@ -8,11 +8,11 @@ function hideAndShowMenuFromBar() {
     }
   } 
 
-function clickClose(){
-  var x = document.getElementById("drop-down-container");
+// function clickClose(){
+//   var x = document.getElementById("drop-down-container");
 
-  x.style.display = "none";
-}
+//   x.style.display = "none";
+// }
 
 
 
