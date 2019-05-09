@@ -447,11 +447,12 @@ input[type=checkbox]:checked~#menu {
     color: black;
     background-color: rgb(241, 241, 241);
     padding: 10px;
-    margin: 10px 0 50px 10px;
+    margin: 20px 0 50px 10px;
 }
 
 .buttonbr91:hover {
     background-color: rgb(200, 200, 200);
+    text-align: left;
 }
 
 .textbr9 {
@@ -490,11 +491,12 @@ input[type=checkbox]:checked~#menu {
 .linkbr9:hover {
     text-decoration-color: rgb(76, 175, 80);
     color: rgb(76, 175, 80);
+    s
 }
 
 .br9s1 {
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 40% auto;
 }
 
 @media screen and (max-width:995px) {
