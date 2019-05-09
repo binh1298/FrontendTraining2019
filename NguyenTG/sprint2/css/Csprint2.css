@@ -25,9 +25,9 @@ button {
     display: none;
     padding: 21px 20px;
     width: 50px;
-    text-align: center;
     margin: 0;
     color: white;
+    text-align: center;
 }
 
 .show-menu:hover {
@@ -37,7 +37,6 @@ button {
 
 input[type=checkbox] {
     display: none;
-    -webkit-appearance: none;
 }
 
 input[type=checkbox]:checked~#menu {
@@ -491,7 +490,6 @@ input[type=checkbox]:checked~#menu {
 .linkbr9:hover {
     text-decoration-color: rgb(76, 175, 80);
     color: rgb(76, 175, 80);
-    s
 }
 
 .br9s1 {
