@@ -1,7 +1,7 @@
 .container {
     display: grid;
-    grid-template-columns: 20% 40% 40%;
-    grid-template-rows: 60px 70px 575px 575px 575px 400px 700px 400px 300px 500px 200px 500px 350px;
+    grid-template-columns: 15% 45% 40%;
+    grid-template-rows: 60px 70px 575px 575px 575px 400px 700px 400px 450px 650px 500px 500px 350px;
 }
                      /* ITEM 1 */
 .item1 {
@@ -12,7 +12,7 @@
     /* justify-content: space-around; */
     border-bottom: 1px solid lightgray;
 }
-.item1 div{
+.item1 > div{
     
     font-size: 37px;
     text-align: left;
@@ -520,21 +520,150 @@
     transition: 0.5s;
 }
 
+                    /* ITEM 14 */
 
 
 
 .item14 {
     background-color: #616161;
     grid-column: span 2;
+    padding: 48px 24px 68px 24px;
 }
+.item14 > div > h2{
+    font-size: 200%;
+    font-family: "Segoe UI",Arial,sans-serif;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+}
+.item14 > div > h4 {
+    font-size: 200%;
+    font-family: "Segoe UI",Arial,sans-serif;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+}
+.item14 > div.oh {
+    line-height: 0px;
+}
+.item14 > div.uh {
+    display: grid;
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: 1fr 1fr;
+}
+.item14 > div > div {
+    font-size: 20px;
+    background-color: #4CAF50;
+    padding: 10px 18px;
+    color: white;
+    border: none;
+    margin-top: 5%;
+    text-align: center;
+    font-family: Verdana,sans-serif;
+}
+.item14 > div > div:hover {
+    color: black;
+    transition: 0.5s;
+}
+.but1, .but2, .but3 {
+    grid-column: span 5;
+    margin: 7px;
+}
+.but4, .but5, .but6, .but7, .but8 {
+    grid-column: span 3;
+    margin: 7px;
+}
+
+                    /* ITEM 15 */
 .item15 {
     background-color: lightgray;
     grid-column: span 2;
+    padding: 32px 24px;
+    text-align: center;
 }
+.item15 > h2 {
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-size: 36px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 20px;
+}
+.item15 > h4 {
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 30px;
+}
+.item15 > h4 > span {
+    font-weight: 800;
+}
+.item15 > img {
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.item15 > button {
+    font-size: 20px;
+    background-color: #616161;
+    font-family: Verdana;
+    padding: 10px 18px;
+    color: #fff;
+    border: none;
+    margin: 5px;
+}
+.item15 > button:hover {
+    background-color: darkgray;
+    color: #616161;
+    transition: 0.5s;
+}
+                    /* ITEM 16 */
 .item16 {
     background-color: white;
     grid-column: span 2;
+    padding: 3%;
+    
 }
+.item16 > h1 {
+    text-align: center;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-size: 2em;
+    font-weight: 400;
+}
+.item16 > h3 {
+    text-align: center;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    color: darkgray;
+}
+.item16 > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    
+}
+.item16 > div >iframe {
+    border: 2px solid lightgray;
+    height: 300px;
+    width: 500px;
+}
+/* .item16 > div >iframe#i1 {
+    
+} */
+.item16 > iframe#i2 {
+    
+}
+
+
+
+
 .item17 {
     background-color: black;
     grid-column: span 2;

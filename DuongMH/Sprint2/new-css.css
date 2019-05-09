@@ -1,0 +1,228 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.flex-head-ex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+.flex-head-ex-reverse {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-row: 5; 
+    grid-gap: 20px;
+    box-sizing: border-box;
+}
+.grid-quare {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 46% 46%;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 2%;
+}
+.grid-ColorPinker {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 29% 29% 29%;
+    grid-gap: 4%;
+    margin-left: 30px;
+    box-sizing: border-box;
+}
+.grid-last-button1 {
+    display: grid;
+    text-align: center;
+    grid-template-columns: auto auto auto;
+    grid-gap: 4%;
+}
+.grid-last-button2 {
+    text-align: center;
+    grid-gap: 2%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+.item2 {
+    background-color:#4CAF50;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    border-left: none;
+    border: 1px solid rgba(211, 211, 211, 0.568);
+}
+.item2 > div {
+    color: white;
+    font-size: 25px;
+    line-height: 70px;
+    text-align: center;
+    padding: 0px 15px; 
+    border-bottom: 1px solid lightgray;
+    box-sizing: border-box;
+}
+.item2 .search {
+    margin-left: auto;
+    padding-right: 20px;
+}
+.item2 .globe {
+    padding-right: 20px;
+}
+.item2 > div:hover {
+    color: black;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.code {
+    
+}
+.item3 {
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid darkgray;
+    border-top: 1px solid darkgray;
+    grid-row : span 11;
+    height: 100%;
+    width: max-content;
+}
+.item3 > div {
+    font-size: 20px;
+    padding: 3px 3px 3px 15px;
+}
+.item3 > div:hover {
+    background-color: darkgray;
+}
+.item3 > h2 {
+    padding-left: 15px;
+    font-family: Segoe UI;
+    margin: 15px 0px 15px 0px;
+}
+.item15 {
+    background-color: lightgray;
+    padding: 32px 24px;
+    text-align: center;
+}
+.item15 > h2 {
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-size: 36px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 20px;
+}
+.item15 > h4 {
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 30px;
+}
+.item15 > h4 > span {
+    font-weight: 800;
+}
+.item15 > img {
+    max-width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.item15 > button {
+    font-size: 20px;
+    background-color: #616161;
+    font-family: Verdana;
+    padding: 10px 18px;
+    color: #fff;
+    border: none;
+    margin: 5px;
+}
+.item15 > button:hover {
+    background-color: darkgray;
+    color: #616161;
+    transition: 0.5s;
+}
+.item16 {
+    background-color: white;
+    padding: 3%;
+    
+}
+.item16 > h1 {
+    text-align: center;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-size: 2em;
+    font-weight: 400;
+}
+.item16 > h3 {
+    text-align: center;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    color: darkgray;
+}
+.item16 > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    
+}
+.item16 > div >iframe {
+    border: 2px solid lightgray;
+    height: 300px;
+    width: 500px;
+}
+@media screen and (max-width:1368px) {
+    .responsive-display-none-1368 {
+        display: none;
+    }
+}
+@media screen and (max-width:1000px) {
+    .flex-container {
+        flex-direction: column;
+        text-align: center;
+    } 
+    .flex-head-ex {
+        flex-direction: column;
+    }
+    .flex-head-ex-reverse {
+        flex-direction: column-reverse; 
+    }
+    .grid-quare {
+        grid-template-columns: 1fr;
+    }
+    .grid-ColorPinker {
+        grid-template-columns: 1fr;
+    }
+    .responsive-display-none-1000 {
+        display: none;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .responsive-display-none-700 {
+        display: none;
+    }
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    
+}
+@media screen and (max-width: 500px) {
+    .responsive-display-none-500 {
+        display: none;
+    }
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    .grid-last-button1 {
+        grid-template-columns: auto;
+    }
+}
