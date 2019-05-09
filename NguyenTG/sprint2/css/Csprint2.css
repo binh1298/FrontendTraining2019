@@ -93,6 +93,18 @@ input[type=checkbox]:checked~#menu {
     margin-top: 30px;
 }
 
+.buttonmenu {
+    display: none;
+    padding: 21px 20px;
+    float: left;
+    color: white;
+}
+
+.buttonmenu:hover {
+    background-color: white;
+    color: black;
+}
+
 .buttonleft {
     float: left;
     padding: 0;
@@ -495,7 +507,7 @@ input[type=checkbox]:checked~#menu {
 
 .br9s1 {
     display: grid;
-    grid-template-columns: 40% auto;
+    grid-template-columns: 60% auto;
 }
 
 @media screen and (max-width:995px) {
@@ -555,7 +567,7 @@ input[type=checkbox]:checked~#menu {
     .hidder1 {
         display: none;
     }
-    .show-menu {
+    .buttonmenu {
         display: block;
     }
 }
