@@ -1,0 +1,575 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+.body{
+    margin: 0;
+    width: 100vw;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 38px;
+}
+.w3school{
+    color:#555555;
+}
+.com{
+    color: #4CAF50;
+}
+.header-rightside{
+    margin-left: auto;
+    font-size: 15px;
+    letter-spacing: 4px;
+    margin-right: 25px;
+    margin-top: 27px;
+}
+.topnav{
+    width: 100%;
+    grid-column: 1/span 2;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    background-color: #4CAF50;
+}
+.topnav-button, .topnav-buttonright2, .topnav-buttonright1{
+    text-align: center;
+    color: white;
+    background-color: #4CAF50;
+    padding: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 3px;
+    font-size: 17px;
+}
+.topnav-button:hover, .topnav-buttonright1:hover,.topnav-buttonright2:hover{
+    background-color: white;
+    color: black;
+}
+.topnav-buttonright1 {
+    margin-left: auto;
+}
+.icon{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    display: none;
+}
+.container{
+    display: grid;
+    grid-template-columns: 18% 82%;
+    grid-template-rows: repeat(11, auto);
+}
+.mainmenu{
+    height: 100%;
+    line-height: 2;
+    grid-row: 1/span 11;
+    box-shadow: 5px 0px 8px 0px rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.19);
+    list-style-type:none;
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.menucontent{
+    line-height: 1.5;
+    font-size: 16px;
+    white-space: normal;
+}
+.menucontent li{
+    padding: 0px 16px;
+    overflow: hidden;
+    display: block;
+}
+.menucontent li:hover{
+    background-color: #f1f1f1;
+}
+.menutitle{
+    padding: 0px 16px;
+    font-size: 18px;
+}
+.page-rightside{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.maincontent{
+    width: 48%;
+    justify-content: center;
+    text-align: center;
+}
+.maincontent-button{
+    display: inline-block;
+    padding: 8px;
+    margin-left: 3px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #fff; 
+    white-space: nowrap;
+    background-color: #555555; 
+}
+.maincontent-button:hover {
+    background-color: lightgrey;
+    color: black;
+}
+.bigtitle{
+    padding-top: 58px;
+    font-size: 80px;
+    color: #555555;
+    padding-bottom: 15px;
+}
+.smalltitle{
+    font-size: 25px;
+    color: #555555;
+    margin-bottom: 20px;
+}
+.example{
+    width: 49%;
+    padding: 3%;
+}
+.examplebox{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+    height: 450px;
+    line-height: 1.5;
+    padding: 16px;
+    background-color: #f1f1f1;
+}
+.exampletitle{
+    font-size: 24px;
+}
+.examplecontent{
+    height: 320px;
+    border-left: 4px solid #4CAF50;
+    background-color: white;
+    margin-top: 16px;
+    padding: 2%;
+    font-family: 'Courier New', Courier, monospace;
+}
+.trybutton {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	float:left;
+  	display: block;
+  	text-align: center;
+    padding: 8px 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color:white;
+    background-color: #4CAF50;  
+}
+.trybutton:hover {
+  background-color: #4CAF50;
+  color:white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.fourbox{
+    background-color: #555555;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 40px;
+    padding: 40px;
+}
+.boxtitle{
+    font-size: 40px;
+}
+.boxtext{
+    margin-top: 15px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.minibox{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+}
+.colorpicker{
+    display: flex;
+    flex-direction: row;
+    padding: 3%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.colorpickerleft,.colorpickerright{
+    text-align: center;
+    justify-content: center;
+    width: 32%;
+    margin: 16px 0px;
+}
+.colorpickermiddle{
+    text-align: center;
+    justify-content: center;
+    width: 35%;
+    margin: 16px 0px;
+}
+.picturecolor{
+    margin-top: 16px;
+    width:140px;
+    height:128px;
+}
+.exercises{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 3%;
+    background-color: #616161;
+    text-align: center;
+    color: #f1f1f1;
+}
+.exercisesboxes{
+    margin-top: 40px;
+    padding: 7%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+.exbox1, .exbox2{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    display: block;
+    color:white;
+    background-color: #4CAF50;  
+}
+.exbox:hover {
+  background-color: #4CAF50;
+  color:white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.webtemplates {
+    padding: 3%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+.webtemplatesbutton {
+    justify-content: center;
+    padding: 8px;
+    display: inline-block;
+    color: #fff; 
+    background-color: #555555; 
+    white-space: nowrap;
+}
+.webtemplatesbutton:hover {
+    background-color: lightgrey;
+    color: black;
+}
+.picturetemp{
+    width: 90%;
+    height: 80%;
+    margin-bottom: 15px;
+}
+.webcertificates{
+    position: relative;
+    background-color: black;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f1f1f1;
+}
+.picture{
+    width: 70%;
+    height: 100%;
+    margin-top: 20px;
+}
+.picturetexttop{
+    position: absolute;
+    font-size: 40px;
+    left: 0;
+    top: 10%;
+    width: 100%;
+}
+.picturetextmiddle{
+    position: absolute;
+    font-size: 18px;
+    left: 0;
+    top: 22%;
+    width: 100%;
+}
+.buttonbox {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+}
+.getcertifiedbutton{
+  	display: inline-block;
+  	text-align: center;
+    padding: 8px 8px;
+    color:white;
+    white-space: nowrap;
+    background-color: #4CAF50;  
+}
+.getcertifiedbutton:hover {
+  background-color: #4CAF50;
+  color:white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.footer{
+    background-color: #616161;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.footertext{
+    text-align: center;
+    font-size: 19px;
+    color: #fff;
+    padding: 0.5%;
+}
+.like{
+    margin-top: 35px;
+    margin-bottom: 35px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+}
+.footer-button{
+    display: inline-block;
+    padding: 8px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: black; 
+    background-color: #f1f1f1; 
+}
+.footer-button:hover {
+    background-color: lightgrey;
+    color: black;
+}
+.footer-buttonforum{
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #fff; 
+    background-color: inherit;
+    letter-spacing: 4px;
+}
+.footer-buttonforum:hover{
+    background-color: inherit;
+    color: #4CAF50;
+}
+.footer-buttonabout{
+    border-left: 2px solid #fff;
+    display: inline-block;
+    padding-left: 10px;
+    padding-bottom: 2px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #fff; 
+    background-color: inherit;
+    letter-spacing: 4px;
+}
+.footer-buttonabout:hover{
+    background-color: inherit;
+    color: #4CAF50
+}
+.footertext{
+    padding: 3%;
+}
+.button{
+    display: flex;
+    flex-direction: row;
+}
+.buttonrightside{
+    margin-left: auto;
+}
+@media screen and (max-width: 520px){
+    .w3school{
+        font-size: 12vw;
+    }
+    .bigtitle{
+        font-size: 16vw;
+    }
+    .smalltitle{
+        font-size: 6vw;
+    }
+    .maincontent-button{
+        font-size: 4vw;
+    }
+    .header-rightside{
+        display: none;
+    }
+    .example{
+        display: none;
+    }
+    .topnav,.page-rightside, .fourbox, .colorpicker, .exercises,.webtemplates, .webcertificates,.footer{
+        width: 100vw;
+    }
+    .fourbox{
+        display: flex;
+        flex-direction: column;
+    }
+    .minibox{
+        margin-top: 20px;
+    }
+    .boxtitle{
+        font-size: 8vw;
+    }
+    .boxtext{
+        font-size: 4vw;
+    }
+    .colorpicker-twobuttons{
+        padding-right: 32px;
+        padding-left: 32px;
+    }
+    .exbox2{
+        display: none;
+    }
+    .exercisesboxes{
+        align-content: unset;
+    }
+    .exbox1{
+        font-size: 4vw;
+        padding-left: 0;
+        padding-right: 0;
+        margin-right: 0;
+    }
+    .webtemplatesbutton{
+        font-size: 4vw;
+        display: block;
+    }
+    .picturecolor{
+        width: 30vw;
+        height: 25vw;
+    }
+    .exercisesboxes{
+        flex-direction: column;   
+    }
+    .picture{
+        width: 100%;
+        margin: 0;
+    }
+    .picturetexttop{
+        font-size: 8vw;
+    }
+    .picturetextmiddle{
+        font-size: 4vw;
+    }
+    .getcertifiedbutton{
+        font-size: 4vw;
+    }
+    .buttonleftside{
+        font-size: 3vw;
+        padding-top: 32px;
+        padding-bottom: 0px;
+        padding-right: 32px;
+        padding-left: 32px;
+    }
+    .buttonrightside{
+        font-size: 3vw;
+    }
+    .footertext{
+        font-size: 4vw;
+    }
+    .footer-button{
+        margin-bottom: 20px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .like{
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .header{
+        flex-direction: column;
+    }
+    .header-rightside, .w3school{
+        margin-left: 0px;
+        margin-top: 0px;
+        text-align: center;
+    }
+    .mainmenu{
+        display: none;
+    }
+    .container{
+        grid-template-columns: 1fr;
+    }
+    .button{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 915px){
+    .page-rightside{
+        flex-direction: column;
+    }
+    .example{
+        order: 2;
+    }
+    .example, .maincontent{
+        width: 100%;
+    }
+    .button{
+        flex-direction: column;
+    }
+    .buttonleftside, .buttonrightside{
+        text-align: center;  
+        margin-right: 0px;
+        margin-left: 0px;     
+    }
+    .colorpicker{
+        flex-direction: column;
+    }
+    .colorpickerleft, .colorpickerright, .colorpickermiddle{
+        width: 100%;
+    }
+    .picturetextmiddle{
+        top: 25%;
+    }
+}
+@media screen and (max-width: 915px) {
+    .topnav .topnav-button{
+        display: none;
+    }
+    .topnav .icon {
+        float: left;
+        display: block;
+    }
+}
+  
+@media screen and (max-width: 915px) {
+    .topnav.responsive {
+        display: flex;
+        flex-direction: row;
+    }
+    .topnav.responsive .topnav-buttonright1 {
+        margin-left: 0px;
+
+    }
+    .icon{
+        display: block;
+        font-size: 25px;
+        color: white;
+        text-align: left;
+        padding: 15px;
+        background-color: #4CAF50;
+    }
+    .topnav.responsive .topnav-button {
+        float: none;
+        display: block;
+        text-align: left;
+        border-top: 1px solid white;
+    }
+}
+@media screen and (max-width: 1220px){
+    .menutitle{
+        font-size: 1.8vw;
+    }
+    .menucontent{
+        font-size: 1.3vw;
+    }
+}

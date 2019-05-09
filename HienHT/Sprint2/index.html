@@ -32,21 +32,28 @@
 
         <div class="link">
             <ul>
-                <li>
-                    TUTORIALS <span><i class="fa fa-caret-down"></i></span>
+                <li onclick="hideAndShowMenuFromBar()" class="bars-switch" id="bars-switch">
+                    <i class="fa fa-bars" id="bars-switch"></i>
                 </li>
 
-                <li>
-                    REFERENCES <span><i class="fa fa-caret-down"></i></span>
-                </li>
+                <div class="drop-down">
 
-                <li>
-                    EXAMPLES <span><i class="fa fa-caret-down"></i></span>
-                </li>
+                    <li>
+                        TUTORIALS <span><i class="fa fa-caret-down"></i></span>
+                    </li>
 
-                <li class="remove">
-                    EXERCISES <span><i class="fa fa-caret-down"></i></span>
-                </li>
+                    <li>
+                        REFERENCES <span><i class="fa fa-caret-down"></i></span>
+                    </li>
+
+                    <li>
+                        EXAMPLES <span><i class="fa fa-caret-down"></i></span>
+                    </li>
+
+                    <li class="remove">
+                        EXERCISES <span><i class="fa fa-caret-down"></i></span>
+                    </li>
+                </div>
 
                 <div class="icon_links">
                     <i class="fa fa-globe"></i>
@@ -54,9 +61,40 @@
                 </div>
 
             </ul>
+
         </div>
 
     </section>
+    <section id="drop-down-container">
+
+        <div  class="icon-close">
+            <li onclick="clickClose()">
+                <i class="fa fa-times"></i>
+            </li>
+
+        </div>
+        
+        <ul>
+
+            <li>
+                TUTORIALS <span><i class="fa fa-caret-down"></i></span>
+            </li>
+    
+            <li>
+                REFERENCES <span><i class="fa fa-caret-down"></i></span>
+            </li>
+    
+            <li>
+                EXAMPLES <span><i class="fa fa-caret-down"></i></span>
+            </li>
+    
+            <li class="remove">
+                EXERCISES <span><i class="fa fa-caret-down"></i></span>
+            </li>
+        </ul>
+
+    </section>
+
     <section id="main-contents-container">
 
         <section class="left-nav">
@@ -148,7 +186,7 @@
 
         <section class="right-side-main-container">
             <div class="learning-examples">
-                <div class="col-title">
+                <div class="item col-title">
                     <h1>HTML</h1>
                     <p>The language for building web pages</p>
                     <div class="click-area">
@@ -158,7 +196,7 @@
 
                 </div>
 
-                <div class="col-example">
+                <div class="item col-example">
 
                     <div class="example_contents">
                         <h3>HTML Example:</h3>
@@ -212,7 +250,7 @@
             </div>
 
             <div class="learning-examples grey-reverse">
-                <div class="col-title">
+                <div class="item col-title">
                     <h1>CSS</h1>
                     <p>The language for styling web pages</p>
                     <div class="click-area">
@@ -222,7 +260,7 @@
 
                 </div>
 
-                <div class="col-example">
+                <div class="item col-example">
 
                     <div class="example_contents">
                         <h3>CSS Example:</h3>
@@ -256,8 +294,8 @@
             </div>
 
             <div class="learning-examples">
-                <div class="col-title">
-                    <h1>JavaScript</h1>
+                <div class="item col-title">
+                    <h1 class="smaller-title">JavaScript</h1>
                     <p>The language for programming web pages</p>
                     <div class="click-area">
                         <button class="btn-black">LEARN JAVASCRIPT</button>
@@ -266,7 +304,7 @@
 
                 </div>
 
-                <div class="col-example">
+                <div class="item col-example">
 
                     <div class="example_contents">
                         <h3>JavaScript Example:</h3>
@@ -307,7 +345,7 @@
             </div>
 
             <div class="learning-examples grey-reverse">
-                <div class="col-title">
+                <div class="item col-title">
                     <h1>SQL</h1>
                     <p>The language for styling web pages</p>
                     <div class="click-area">
@@ -317,17 +355,17 @@
 
                 </div>
 
-                <div class="col-example">
+                <div class="item col-example">
 
                     <div class="example_contents">
-                        <h3>CSS Example:</h3>
+                        <hgit 3>CSS Example:</h3>
 
                         <div class="box-content">
                             <span style="color:black">
                                 <span style="color:mediumblue">SELECT</span> * <span
                                     style="color:mediumblue">FROM</span> Customers<br>
                                 <span style="color:mediumblue">WHERE</span> Country=<span
-                                    style="color:brown">'Mexico'</span>;<span style="color:">
+                                    style="color:brown">'Mexico'</span>;<span>
 
                                 </span> </span>
                         </div>
@@ -386,7 +424,7 @@
                     <div class="reference-specific">
                         <h1 class="title">W3.CSS</h1>
                         <p>A modern CSS framework for faster and better responsive web pages</p>
-                        <p style="height: 0.8em"></p>
+                        
                         <button class="btn-black">
                             LEARN W3.CSS
                         </button>
@@ -397,7 +435,6 @@
 
                     <div class="reference-specific">
                         <h1 class="title">W3.CSS</h1>
-
                         <img src="./img/colorpicker.png" alt="">
 
                     </div>
@@ -408,11 +445,11 @@
                     <div class="reference-specific">
                         <h1 class="title">Bootstrap</h1>
                         <p>A CSS framework for designing better web pages</p>
-                        <p style="height: 0.8em"></p>
+                        
                         <button class="btn-black">
                             LEARN BOOSTRAP 3
                         </button>
-                        <p style="height: 0.8em"></p>
+                        
 
                         <button class="btn-black">
                             LEARN BOOSTRAP 4
@@ -428,20 +465,47 @@
                 <h1 class="title">Exercises</h1>
                 <p>Test yourself with exercises</p>
                 <div class="btn-container">
-                    <div class="btn-row1">
-                        <button class="btn-green">HTML Exercises</button>
-                        <button class="btn-green">CSS Exercises</button>
-                        <button class="btn-green">JavaScript Exercises</button>
+                    <div class="btn-row1 row">
+                        <div class="btn">
+                            <button class="btn-green">HTML Exercises</button>
+
+                        </div>
+                        <div class="btn">
+                            <button class="btn-green">CSS Exercises</button>
+
+                        </div>
+                        <div class="btn">
+                            <button class="btn-green">JavaScript Exercises</button>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="btn-row2 row">
+                        <div class="btn">
+                            <button class="btn-green">SQL</button>
+
+                        </div>
+                        <div class="btn">
+                            <button class="btn-green">PHP</button>
+
+                        </div>
+                        <div class="btn">
+                            <button class="btn-green">Python</button>
+
+                        </div>
+                        <div class="btn">
+                            <button class="btn-green">jQuery</button>
+
+                        </div>
+                        <div class="btn">
+                            <button class="btn-green">Java</button>
+
+                        </div>
 
                     </div>
 
-                    <div class="btn-row2">
-                        <button class="btn-green">SQL Exercises</button>
-                        <button class="btn-green">CSS Exercises</button>
-                        <button class="btn-green">CSS Exercises</button>
-                        <button class="btn-green">CSS Exercises</button>
-                        <button class="btn-green">CSS Exercises</button>
-                    </div>
                 </div>
             </div>
 
@@ -449,9 +513,11 @@
                 <h1 class="title">Web Templates</h1>
                 <p>Browse our selection of <span style="font-weight: bold">free</span> responsive HTML Templates</p>
                 <img src="./img/w3css_templates.jpg" alt="">
-                <button class="btn-black">
-                    BROWSE TEMPLATES
-                </button>
+
+                <div class="btn">
+                    <button class="btn-black">BROWSE TEMPLATES</button>
+
+                </div>
             </div>
 
             <div class="how-to-section">
@@ -462,8 +528,8 @@
                 <p>Code snippets for HTML, CSS and JavaScript</p>
 
                 <div class="html-section-iframe">
-                    <iframe src="/section-left.html" frameborder="0"></iframe>
-                    <iframe src="/section-right.html" frameborder="0"></iframe>
+                    <iframe src="./iframe-section-left.html" frameborder="0"></iframe>
+                    <iframe src="./iframe-section-right.html" frameborder="0"></iframe>
                 </div>
 
                 <button class="btn-black">
@@ -472,49 +538,61 @@
             </div>
 
             <div class="certificates">
-                <div class="container">
-                    <img src="./img/getcertified.jpg" alt="">
-                    <div class="text">
-                        <div class="content">
-                            <h1 class="title">
-                                Web Certificates
-                            </h1>
-                            <p>Get Certified in HTML, CSS and JavaScript</p>
 
-                        </div>
+                <div class="container">
+
+                    <img src="./img/getcertified.jpg" alt="">
+                    
+                    <div class="text-content">
+                            <h1 class="title">Web Certificates</h1>
+                            <p>Get Certified in HTML, CSS and JavaScript</p>
+    
+                    </div>
+    
+                    <div class="btn">
+                            <button class="btn-green">Get Certified »</button>
     
                     </div>
 
+                    
                 </div>
-                
-                <button class="btn-green">
-                     Get Certified »
-                </button>
-                
+
+
+
+
             </div>
 
             <div class="ending">
                 <div class="end-nav">
-                    <button class="btn-black">WEB CERTIFICATES</button>
-                    <button class="btn-black">QUIZZES</button>
-                    <button class="btn-black">EXCERCISES</button>
-    
+                    <div class="btn-container">
+                        <button class="btn-black">WEB CERTIFICATES</button>
+                        <button class="btn-black">QUIZZES</button>
+                        <button class="btn-black">EXCERCISES</button>
+
+                    </div>
+
                     <ul>
                         <li><a href="">FORUM</a> | <a href="">ABOUT</a></li>
                     </ul>
 
-                    
+
                 </div>
-                <p>W3Schools is optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using this site, you agree to have read and accepted our <span>terms of use</span>, <span>cookie and privacy policy.</span>
+                <p>W3Schools is optimized for learning, testing, and training. Examples might be simplified to improve
+                    reading and basic understanding. Tutorials, references, and examples are constantly reviewed to
+                    avoid errors, but we cannot warrant full correctness of all content. While using this site, you
+                    agree to have read and accepted our <span>terms of use</span>, <span>cookie and privacy
+                        policy.</span>
                     <span>Copyright 1999-2019</span> by Refsnes Data. All Rights Reserved.</p>
-                
-               <i class="fas fa-thumbs-up    "></i>
+
+                <i class="fas fa-thumbs-up    "></i>
             </div>
         </section>
 
-        
+
 
     </section>
+
+    <script src="./js/bar-button-click.js"></script>
 
 </body>
 
