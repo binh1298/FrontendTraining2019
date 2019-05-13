@@ -1,0 +1,33 @@
+.flex-responsive-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.site-main-container {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+.features-container {
+  justify-content: space-around;
+}
+
+.features-card {
+  text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .flex-responsive-container {
+    text-align: center;
+    flex-direction: column;
+  }
+  .flex-reverse-container {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .display-none-responsive {
+    display: none;
+  }
+}
