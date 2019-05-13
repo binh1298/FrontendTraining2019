@@ -1,0 +1,301 @@
+body{
+    margin: 0;
+    font-family:  Verdana,sans-serif;
+}
+
+.header-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.header-logo{
+    font-size: 30px;
+}
+
+.header-title{
+    text-align: right;
+ 
+}
+
+.header-links{
+    background-color: green;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    padding: 12px;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.16), 0px 2px 10px 0px rgba(0,0,0,0.12);
+}
+
+.display-inline-block{
+    display: inline-block;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 230px 1fr;
+}
+.left-row{
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.16), 0px 2px 10px 0px rgba(0,0,0,0.12);
+
+}
+
+.html-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+}
+
+.html-content, .html-example{
+    padding:20px;
+}
+
+.center{
+    text-align: center;
+}
+
+.box-content{
+    border-left: 5px solid green;
+  width: 100%;
+  background-color: white;
+}
+
+.add-box{
+    padding: 10px 20px;
+    background-color: lightgrey;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.16), 0px 2px 10px 0px rgba(0,0,0,0.12);
+}
+
+.css-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: lightgray; 
+    margin: 0;
+}
+
+.css-content, .css-example{
+    padding:15px;
+}
+
+.four-box-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: gray;
+    padding:25px;
+    box-sizing: border-box;
+   grid-gap: 10px;
+}
+
+.python-box, .php-box, .jquery-box, .java-box{
+   
+    background-color: white;
+    padding:10px;
+}
+
+.three-box-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.exercise-container{
+    background-color: gray;
+    padding: 20px;
+}
+
+.line1-container{
+    display:grid;
+    grid-gap: 10px;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom:10px;
+}
+
+.line2-container{
+    display:grid;
+    grid-gap: 10px;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+}
+
+.template-container{
+    background-color: rgb(202, 197, 197);
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.section-container{
+    padding: 20px 50px;
+    box-sizing: border-box;
+}
+.two-box-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+.box-full-sidebar{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    height:200px;
+    border: 1px solid grey;
+}
+.box-auto-sidebar{
+    display:grid;  
+    grid-template-columns: 200px 1fr;
+
+    height:200px;
+    border: 1px solid grey;
+}
+
+.black-column{
+    background-color: black;
+    size: 100%;
+}
+
+.white-column{
+    background-color: white;
+    size:100%;
+    padding:10px;
+    box-sizing: border-box;
+}
+
+.certificate-container{
+    width: 100%;
+    position: relative;
+    background-color: black;
+    padding:0px auto;
+}
+
+.top-line{
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.button-certified{   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+}
+
+.last-container{
+    background-color: gray;
+    padding: 30px 40px;
+}
+
+.line-contain-forum{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.display-forum{
+    text-align: right;
+}
+
+.display-button{
+    text-align: left;
+}
+
+.forum-style{
+    color: white;
+    margin-top: 0;
+}
+
+.three-cross{
+    display: none;
+}
+
+.display-inline{
+    display: inline;
+}
+
+.column{
+    list-style-type: none;
+}
+
+#column{
+    text-decoration: none;
+    color: black;
+}
+
+.gray-button{
+    background-color: grey;
+    color: white;
+    padding: 8px;
+}
+
+.green-button{
+    background-color: green;
+    color: white;
+    padding: 8px;
+}
+
+.white-button{
+    background-color: white;
+    color: black;
+    padding: 8px;
+}
+
+@media screen and (max-width: 922px){
+    .display100-922{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+    .text-center{
+        text-align: center;
+    }
+    .display-none-922{
+        display: none;
+    }
+
+    
+}
+
+@media screen and (max-width: 650px){
+    .display100-650{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .display-none-650{
+        display: none;
+    }
+
+    .display-forum{
+        text-align: center;
+    }
+
+    .display-button{
+        text-align: center;
+    }
+
+    .forum-style{
+        margin-top: 20px;
+    }
+
+    .three-cross{
+        display: block;
+    }
+
+
+    .css-container { display: flex; flex-flow: column; }
+    .css-content{order: 1;}
+    .css-example{order: 2;}
+}
+
+@media screen and (max-width: 500px){
+    .display-none-500{
+        display: none;
+    }
+    .display100-500{
+        grid-template-columns: 1fr;
+    }
+}
