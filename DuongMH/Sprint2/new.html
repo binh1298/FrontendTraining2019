@@ -9,20 +9,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-        <div class="flex-container">
-            <p>W3school.com</p>
-            <p class="responsive-display-none-500">THE WORLD'S LARGEST WEB DEVELOPER SITE</p>
+        <div class="flex-container"> 
+            <div>
+                <p class="header-name">w3school<span style="color:#4CAF50;">.com</span></p>         
+            </div>
+            <div>
+                <p class="responsive-display-none-500 header-name" style="font-size: 15px;">THE WORLD'S LARGEST WEB DEVELOPER SITE</p>
+            </div>
         </div>
-        <div class="item2">
-            <div class="responsive-display-none-700">TUTORIAL <i class="fa fa-caret-down"></i></div>
-            <div class="responsive-display-none-700">REFERENCES <i class="fa fa-caret-down"></i></div>
-            <div class="responsive-display-none-700">EXAMPLES <i class="fa fa-caret-down"></i></div>
-            <div class="responsive-display-none-1000">EXERCISES <i class="fa fa-caret-down"></i></div>
-            <div class="search"><i class="fa fa-search"></i></div>
-            <div class="globe"><i class="fa fa-globe"></i></div>
+        <div class="menu-dropdown">
+            <ul>
+                <li class="responsive-apear-700" style="display: none;"><i class="fa fa-bars"></i></li>
+                <li class="li-responsive-display-none-700">TUTORIALS <i class="fa fa-caret-down"></i></li>
+                <li class="li-responsive-display-none-700">REFERENCES <i class="fa fa-caret-down"></i></li>
+                <li class="li-responsive-display-none-700">EXAMPLES <i class="fa fa-caret-down"></i></li>
+                <li class="responsive-display-none-1000">EXERCISES <i class="fa fa-caret-down"></i></li>
+                <li class="icon-right-side"><i class="fa fa-globe block-right-side"></i></li>
+                <li class="icon-right-side"><i class="fa fa-search block-right-side"></i></li>
+            </ul>
         </div>
         <div class="grid-container">
-            <div class="responsive-display-none-700 item3">
+            <div class="responsive-display-none-700 column-left-side">
                 <h2>HTML and CSS</h2>
                 <div>Learn HTML</div>
                 <div>Learn CSS</div>
@@ -96,133 +103,145 @@
             </div>
             <div class="flex-head-ex">
                 <div>
-                    <h2>HTML</h2>
-                    <h4>The language for building web pages</h4>
-                    <button>Learn HTML</button>
-                    <button>HTML Reference</button>
+                    <h2 class="h2-black-similar">HTML</h2>
+                    <h4 class="h4-black-similar">The language for building web pages</h4>
+                    <button class="button-gray-similar">Learn HTML</button>
+                    <button class="button-gray-similar">HTML Reference</button>
                 </div>
-                <div class="responsive-display-none-500">
-                    <h2>HTML Example:</h2>
-                    <div style="border: 1px solid green;">
-                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br>
-                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span style="color:mediumblue">&gt;</span></span><br>
-                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>title<span style="color:mediumblue">&gt;</span></span>HTML Tutorial<span style="color:brown"><span style="color:mediumblue">&lt;</span>/title<span style="color:mediumblue">&gt;</span></span><br>
-                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue">&gt;</span></span><br><br>
-                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:mediumblue">&gt;</span></span>This is a heading<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span><br>
-                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>This is a paragraph.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br><br>
-                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span><br>
-                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue">&gt;</span></span>
+                <div class="block-example">
+                    <div class="responsive-display-none-500 background-gray-similar">
+                        <h2>HTML Example:</h2>
+                        <div class="block-code-similar">
+                            <span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br>
+                            <span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span style="color:mediumblue">&gt;</span></span><br>
+                            <span style="color:brown"><span style="color:mediumblue">&lt;</span>title<span style="color:mediumblue">&gt;</span></span>HTML Tutorial<span style="color:brown"><span style="color:mediumblue">&lt;</span>/title<span style="color:mediumblue">&gt;</span></span><br>
+                            <span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue">&gt;</span></span><br><br>
+                            <span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:mediumblue">&gt;</span></span>This is a heading<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span><br>
+                            <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>This is a paragraph.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br><br>
+                            <span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span><br>
+                            <span style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue">&gt;</span></span>
+                        </div>
+                        <button class="button-green">Try it Yourself</button>
                     </div>
                 </div>
             </div>
-            <div class="flex-head-ex-reverse">
-                <div class="responsive-display-none-500">
-                    <h2>CSS Example:</h2>
-                    <div style="border: 1px solid green;">
-                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br>
-                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span style="color:mediumblue">&gt;</span></span><br>
-                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>title<span style="color:mediumblue">&gt;</span></span>HTML Tutorial<span style="color:brown"><span style="color:mediumblue">&lt;</span>/title<span style="color:mediumblue">&gt;</span></span><br>
-                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue">&gt;</span></span><br><br>
-                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:mediumblue">&gt;</span></span>This is a heading<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span><br>
-                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>This is a paragraph.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br><br>
-                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span><br>
-                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue">&gt;</span></span>
+            <div class="flex-head-ex-reverse background-gray-similar">
+                <div class="block-example">
+                    <div class="responsive-display-none-500">
+                        <h2>CSS Example:</h2>
+                        <div class="block-code-similar">
+                            <span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br>
+                            <span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span style="color:mediumblue">&gt;</span></span><br>
+                            <span style="color:brown"><span style="color:mediumblue">&lt;</span>title<span style="color:mediumblue">&gt;</span></span>HTML Tutorial<span style="color:brown"><span style="color:mediumblue">&lt;</span>/title<span style="color:mediumblue">&gt;</span></span><br>
+                            <span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue">&gt;</span></span><br><br>
+                            <span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:mediumblue">&gt;</span></span>This is a heading<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span><br>
+                            <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>This is a paragraph.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br><br>
+                            <span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span><br>
+                            <span style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue">&gt;</span></span>
+                        </div>
+                        <button class="button-green">Try it Yourself</button>
                     </div>
                 </div>
                 <div>
-                    <h2>CSS</h2>
-                    <h4>The language for building web pages</h4>
-                    <button>Learn CSS</button>
-                    <button>CSS Reference</button>
+                    <h2 class="h2-black-similar">CSS</h2>
+                    <h4 class="h4-black-similar">The language for building web pages</h4>
+                    <button class="button-gray-similar">Learn CSS</button>
+                    <button class="button-gray-similar">CSS Reference</button>
                 </div>
                 
             </div>
             <div class="flex-head-ex">
                 <div>
-                    <h2>JavaScript</h2>
-                    <h4>The language for building web pages</h4>
-                    <button>Learn JavaScript</button>
-                    <button>JavaScript Reference</button>
+                    <h2 class="h2-black-similar">JavaScript</h2>
+                    <h4 class="h4-black-similar">The language for building web pages</h4>
+                    <button class="button-gray-similar">Learn JavaScript</button>
+                    <button class="button-gray-similar">JavaScript Reference</button>
                 </div>
-                <div class="responsive-display-none-500">
-                    <h2>JavaScript Example:</h2>
-                    <div style="border: 1px solid green;">
-                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br>
-                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span style="color:mediumblue">&gt;</span></span><br>
-                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>title<span style="color:mediumblue">&gt;</span></span>HTML Tutorial<span style="color:brown"><span style="color:mediumblue">&lt;</span>/title<span style="color:mediumblue">&gt;</span></span><br>
-                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue">&gt;</span></span><br><br>
-                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:mediumblue">&gt;</span></span>This is a heading<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span><br>
-                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>This is a paragraph.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br><br>
-                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span><br>
-                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue">&gt;</span></span>
+                <div class="block-example">
+                    <div class="responsive-display-none-500 background-gray-similar">
+                        <h2>JavaScript Example:</h2>
+                        <div class="block-code-similar">
+                            <span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br>
+                            <span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span style="color:mediumblue">&gt;</span></span><br>
+                            <span style="color:brown"><span style="color:mediumblue">&lt;</span>title<span style="color:mediumblue">&gt;</span></span>HTML Tutorial<span style="color:brown"><span style="color:mediumblue">&lt;</span>/title<span style="color:mediumblue">&gt;</span></span><br>
+                            <span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue">&gt;</span></span><br><br>
+                            <span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:mediumblue">&gt;</span></span>This is a heading<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span><br>
+                            <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>This is a paragraph.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br><br>
+                            <span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span><br>
+                            <span style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue">&gt;</span></span>
+                        </div>
+                        <button class="button-green">Try it Yourself</button>
                     </div>
                 </div>
             </div>
-            <div class="flex-head-ex-reverse">
-                <div class="responsive-display-none-500">
-                    <h2>SQL Example:</h2>
-                    <div style="border: 1px solid green;">
-                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br>
-                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span style="color:mediumblue">&gt;</span></span><br>
-                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>title<span style="color:mediumblue">&gt;</span></span>HTML Tutorial<span style="color:brown"><span style="color:mediumblue">&lt;</span>/title<span style="color:mediumblue">&gt;</span></span><br>
-                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue">&gt;</span></span><br><br>
-                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:mediumblue">&gt;</span></span>This is a heading<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span><br>
-                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>This is a paragraph.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br><br>
-                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span><br>
-                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue">&gt;</span></span>
+            <div class="flex-head-ex-reverse background-gray-similar">
+                <div class="block-example">
+                    <div class="responsive-display-none-500">
+                        <h2>SQL Example:</h2>
+                        <div class="block-code-similar">
+                            <span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br>
+                            <span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span style="color:mediumblue">&gt;</span></span><br>
+                            <span style="color:brown"><span style="color:mediumblue">&lt;</span>title<span style="color:mediumblue">&gt;</span></span>HTML Tutorial<span style="color:brown"><span style="color:mediumblue">&lt;</span>/title<span style="color:mediumblue">&gt;</span></span><br>
+                            <span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue">&gt;</span></span><br><br>
+                            <span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:mediumblue">&gt;</span></span>This is a heading<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span><br>
+                            <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>This is a paragraph.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br><br>
+                            <span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span><br>
+                            <span style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue">&gt;</span></span>
+                        </div>
+                        <button class="button-green">Try it Yourself</button>
                     </div>
                 </div>
                 <div>
-                    <h2>SQL</h2>
-                    <h4>The language for building web pages</h4>
-                    <button>Learn SQL</button>
-                    <button>SQL Reference</button>
+                    <h2 class="h2-black-similar">SQL</h2>
+                    <h4 class="h4-black-similar">The language for building web pages</h4>
+                    <button class="button-gray-similar">Learn SQL</button>
+                    <button class="button-gray-similar">SQL Reference</button>
                 </div>
                 
             </div>
             <div class="grid-quare">
                 <div>
-                    <h2>Python</h2>
-                    <h4>A web server programming language</h4>
-                    <button>LEARN PYTHON</button>
+                    <h2 class="h2-similar">Python</h2>
+                    <h4 class="h4-similar">A web server programming language</h4>
+                    <button class="button-gray-similar">LEARN PYTHON</button>
                 </div>
                 <div>
-                    <h2>PHP</h2>
-                    <h4>A web server programming language</h4>
-                    <button>LEARN PHP 5</button>
-                    <button>LEARN PHP 7</button>
+                    <h2 class="h2-similar">PHP</h2>
+                    <h4 class="h4-similar">A web server programming language</h4>
+                    <button class="button-gray-similar">LEARN PHP 5</button>
+                    <button class="button-gray-similar">LEARN PHP 7</button>
                 </div>
                 <div>
-                    <h2>jQuery</h2>
-                    <h4>A JavaScript library for developing web pages</h4>   
-                    <button>LEARN jQuery</button>
+                    <h2 class="h2-similar">jQuery</h2>
+                    <h4 class="h4-similar">A JavaScript library for developing web pages</h4>   
+                    <button class="button-gray-similar">LEARN jQuery</button>
                 </div>
                 <div>
-                    <h2>Java</h2>
-                    <h4>A programming language</h4>
-                    <button>LEARN JAVA</button>
+                    <h2 class="h2-similar">Java</h2>
+                    <h4 class="h4-similar">A programming language</h4>
+                    <button class="button-gray-similar">LEARN JAVA</button>
                 </div>
             </div>
             <div class="grid-ColorPinker">
                 <div>
-                    <h2>W3.CSS</h2>
-                    <h4>A modern CSS framework for faster and better responsive web pages</h4>
-                    <button>LEARN W3.CSS</button>
+                    <h2 class="h2-similar">W3.CSS</h2>
+                    <h4 class="h4-similar">A modern CSS framework for faster and better responsive web pages</h4>
+                    <button class="button-gray-similar">LEARN W3.CSS</button>
                 </div>
                 <div>
-                    <h2>Color Picker</h2>
+                    <h2 class="h2-similar">Color Picker</h2>
                     <img src="https://www.w3schools.com/images/colorpicker.png" alt="">
                 </div>
                 <div>
-                    <h2>Bootstrap</h2>
-                    <h4>A CSS framework for designing better web pages</h4>
-                    <button>LEARN BOOTSTRAP 3</button>
-                    <button>LEARN BOOTSTRAP 4</button>
+                    <h2 class="h2-similar">Bootstrap</h2>
+                    <h4 class="h4-similar">A CSS framework for designing better web pages</h4>
+                    <button class="button-gray-similar">LEARN BOOTSTRAP 3</button>
+                    <button class="button-gray-similar">LEARN BOOTSTRAP 4</button>
                 </div>
             </div>
             <div>
-                <h2>Exercises</h2>
-                <h4>Test yourself with exercises</h4>
+                <h2 class="h2-white-similar">Exercises</h2>
+                <h4 class="h4-white-similar">Test yourself with exercises</h4>
                 <div class="grid-last-button1">
                     <button>HTML Exercises</button>
                     <button>CSS Exercises</button>
@@ -236,21 +255,47 @@
                     <button>Java</button>
                 </div>
             </div>
-            <div class="item15">
-                <h2>Web Templates</h2>
-                <h4>Browse our selection of <span>free</span> responsive HTML Templates</h4>
-                <img src="https://www.w3schools.com/w3css_templates.jpg" alt="">
-                <br><br>
-                <button>BROWSE TEMPLATES</button>
-            </div>
-            <div class="item16">
-                <h1>How To Section</h1>
-                <h3>Code snippets for HTML, CSS and JavaScript</h3>
-                <div class="responsive-display-none-1368">    
-                    <iframe id="i1" src="./window1.html" frameborder="0">window1</iframe>
-                    <iframe id="i2" src="./window2.html" frameborder="0">window2</iframe>
+            <div class="background-gray-similar">
+                <h2 class="h2-similar">Web Templates</h2>
+                <h4 class="h4-similar">Browse our selection of free responsive HTML Templates</h4>
+                <div style="text-align: center;">
+                    <img src="https://www.w3schools.com/w3css_templates.jpg" alt="hahaha" class="img-size-1" width="800px" height="375px">
                 </div>
+                <button class="button-gray-similar">BROWSE TEMPLATES</button>
             </div>
+            <div>
+                <h2 class="h2-similar">How To Section</h2>
+                <h4 class="h4-similar">Code snippets for HTML, CSS and JavaScript</h4>
+                <div class="window responsive-display-none-1368">
+                    <iframe src="./window1.html" frameborder="0" class="window-size"></iframe>
+                    <iframe src="./window2.html" frameborder="0" class="window-size"></iframe>
+                </div>
+                <button class="button-gray-similar">LEARN HOW TO</button>
+            </div>
+            <div class="background-black">
+                <img src="https://www.w3schools.com/getcertified.jpg" width="600px" height="400px" class="img-size-2">
+                <div>                    
+                    <h2 class="h2-white-similar">Web Certificates</h2>
+                    <h4 class="h4-white-similar">Get Certificated in HTML, CSS, and JavaScript</h4>
+                </div>
+                <button>Get Certified <i class="fa fa-angle-double-right"></i></button>
+            </div>
+            <div>
+                <div>
+                    <button>WEB CERTIFICATES</button>
+                    <button>QUIZZES</button>
+                    <button>EXERCISES</button>
+                    <span>FORUM</span>
+                    <span>ABOUT</span>
+                </div>
+                <p class="w3-medium">
+                    W3Schools is optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of
+                    all content. While using this site, you agree to have read and accepted our <a href="/about/about_copyright.asp">terms of use</a>, <a href="/about/about_privacy.asp">cookie and privacy policy</a>.<br>
+                    <a href="/about/about_copyright.asp">Copyright 1999-2019</a> by Refsnes Data. All Rights Reserved.<br><br>
+                </p>
+                <i class="fa fa-thumbs-up"></i>
+            </div>
+            
         </div>
 </body>
 </html>

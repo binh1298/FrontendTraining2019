@@ -2,12 +2,17 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
 }
 .flex-head-ex {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 .flex-head-ex-reverse {
     display: flex;
@@ -18,10 +23,11 @@
 }
 .grid-container {
     display: grid;
-    grid-template-columns: 15% 85%;
+    grid-template-columns: 170px auto;
     grid-row: 5; 
     grid-gap: 20px;
     box-sizing: border-box;
+    
 }
 .grid-quare {
     text-align: center;
@@ -50,144 +56,192 @@
     display: grid;
     grid-template-columns: auto auto auto auto auto;
 }
-.item2 {
-    background-color:#4CAF50;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    border-left: none;
-    border: 1px solid rgba(211, 211, 211, 0.568);
+.column-left-side {
+    grid-row: span 11;
+    width: max-content;
+    border-right: 2px solid lightgray;
+    padding-right: 10px;
 }
-.item2 > div {
+.menu-dropdown > ul {
+    list-style-type: none;
+    background-color: #4CAF50;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+    
+}
+.menu-dropdown > ul > li {
+    display: inline-block;
     color: white;
-    font-size: 25px;
-    line-height: 70px;
+    height: 50px;
+    width: 150px;
     text-align: center;
-    padding: 0px 15px; 
-    border-bottom: 1px solid lightgray;
+    font-size: 20px;
+    padding: 20px 5px 0px 5px;
+}
+.menu-dropdown > ul > li:hover {
+    background-color: white;
+    color: black;
+    box-shadow: -1px 4px 4px -1px lightgray;
+}
+.menu-dropdown > ul > li.icon-right-side {
+    width: 50px;
+    margin-right: 0px;
+    float: right;
+}
+.h2-similar {
+    font-size: 40px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+}
+.h4-similar {
+    color: #3a3a3a;
+    font-size: 25px;
+    display: block;
+    text-align: center;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+}
+.img-size-1 {
+    max-width: 90%;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 20px;
     box-sizing: border-box;
 }
-.item2 .search {
-    margin-left: auto;
-    padding-right: 20px;
+.img-size-2 {
+    max-width: 70%;
+    height: auto;
 }
-.item2 .globe {
-    padding-right: 20px;
+.window {
+    text-align: center;
 }
-.item2 > div:hover {
+.window-size {
+    width: 500px;
+    height: 300px;
+    border: 3px solid darkgray;
+}
+.background-black {
+    background-color: black;
+    text-align: center;
+    height: max-content;
+    position: relative;
+}
+.background-black div {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: black;
+    opacity: 0.7;
+    color: white;
+}
+.background-black button {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+
+}
+.h2-white-similar {
+    font-size: 35px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    margin: 0px;
+}
+.h4-white-similar {
+    font-size: 25px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    margin: 0px;
+    line-height: 40px;
+}
+.header-name {
+    font-size: 37px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    color: #555555;
+    margin: 0px;
+    line-height: 40px;
+    text-align: center;
+}
+.h2-black-similar {
+    font-size: 80px;
+    color: #555555;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.h4-black-similar {
+    font-size: 24px;
+    color: #3a3a3a;
+    font-family: Verdana,sans-serif;
+    text-align: center;
+    font-weight: 400;
+}
+.button-gray-similar {
+    font-size: 20px;
+    background-color: #616161;
+    padding: 8px 16px;
+    text-align: center;
+    color: white;
+    font-family: Verdana,sans-serif;
+}
+.button-gray-similar:hover {
+    color: black;
+    background-color: lightgray;
+    transition: 0.5s;
+    border: none;
+}
+.background-gray-similar {
+    background-color: #f1f1f1;
+}
+.block-code-similar {
+    background-color: white;
+    padding: 8px 8px 8px;
+    text-align: left;
+    border-left: 3px solid green;
+    font-size: 20px;
+}
+.block-example {
+    margin: 10px 10px 10px 0px;
+    width: 30%;
+}
+.block-example div {
+    text-align: left;
+    padding: 5px 10px 15px 10px;
+}
+.button-green {
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    font-family: Verdana,sans-serif;
+    border: none;
+    padding: 10px;
+}
+.button-green:hover {
     color: black;
     background-color: white;
     transition: 0.5s;
-}
-
-.code {
-    
-}
-.item3 {
-    background-color:white;
-    display: flex;
-    flex-direction: column;
-    border-right: 1px solid darkgray;
-    border-top: 1px solid darkgray;
-    grid-row : span 11;
-    height: 100%;
-    width: max-content;
-}
-.item3 > div {
-    font-size: 20px;
-    padding: 3px 3px 3px 15px;
-}
-.item3 > div:hover {
-    background-color: darkgray;
-}
-.item3 > h2 {
-    padding-left: 15px;
-    font-family: Segoe UI;
-    margin: 15px 0px 15px 0px;
-}
-.item15 {
-    background-color: lightgray;
-    padding: 32px 24px;
-    text-align: center;
-}
-.item15 > h2 {
-    font-family: "Segoe UI",Arial,sans-serif;
-    font-size: 36px;
-    text-align: center;
-    font-weight: 400;
-    line-height: 20px;
-}
-.item15 > h4 {
-    font-family: "Segoe UI",Arial,sans-serif;
-    font-size: 20px;
-    text-align: center;
-    font-weight: 400;
-    line-height: 30px;
-}
-.item15 > h4 > span {
-    font-weight: 800;
-}
-.item15 > img {
-    max-width: 50vw;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-.item15 > button {
-    font-size: 20px;
-    background-color: #616161;
-    font-family: Verdana;
-    padding: 10px 18px;
-    color: #fff;
-    border: none;
-    margin: 5px;
-}
-.item15 > button:hover {
-    background-color: darkgray;
-    color: #616161;
-    transition: 0.5s;
-}
-.item16 {
-    background-color: white;
-    padding: 3%;
-    
-}
-.item16 > h1 {
-    text-align: center;
-    font-family: "Segoe UI",Arial,sans-serif;
-    font-size: 2em;
-    font-weight: 400;
-}
-.item16 > h3 {
-    text-align: center;
-    font-family: "Segoe UI",Arial,sans-serif;
-    font-size: 1em;
-    font-weight: 400;
-    color: darkgray;
-}
-.item16 > div {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-left: 100px;
-    margin-right: 100px;
-    
-}
-.item16 > div >iframe {
-    border: 2px solid lightgray;
-    height: 300px;
-    width: 500px;
+    text-align: left;
 }
 @media screen and (max-width:1368px) {
     .responsive-display-none-1368 {
         display: none;
     }
 }
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1024px) {
     .flex-container {
         flex-direction: column;
-        text-align: center;
+        justify-content: center;
+        line-height: 20px;
     } 
     .flex-head-ex {
         flex-direction: column;
@@ -204,21 +258,46 @@
     .responsive-display-none-1000 {
         display: none;
     }
+    ul li.responsive-display-none-1000 {
+        display: none;
+    }
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:768px) {
+    ul li.responsive-apear-700 {
+        display: inline-block;
+        width: 50px;
+        width: 150px;
+        text-align: center;
+        font-size: 20px;
+        margin:0px;
+    }
     .responsive-display-none-700 {
         display: none;
     }
-    .grid-container {
-        grid-template-columns: 1fr;
+    ul li.li-responsive-display-none-700 {
+        display: none;
     }
+    .grid-container {
+        grid-template-columns: 120%;
+        grid-column: span 2;
+    }
+    .flex-container {
+        flex-direction: column;
+        justify-content: center;
+        line-height: 20px;
+    } 
     
 }
 @media screen and (max-width: 500px) {
     .responsive-display-none-500 {
         display: none;
     }
+    .flex-container {
+        flex-direction: column;
+        justify-content: center;
+        line-height: 20px;
+    } 
     .grid-container {
         grid-template-columns: 1fr;
     }
